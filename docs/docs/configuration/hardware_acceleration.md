@@ -300,7 +300,7 @@ You will need to use the image with the nvidia container runtime:
 docker run -d \
   ...
   --runtime nvidia
-  ghcr.io/blakeblackshear/frigate-tensorrt-jp5
+  ghcr.io/blakeblackshear/frigate:stable-tensorrt-jp5
 ```
 
 ### Docker Compose - Jetson
@@ -310,7 +310,7 @@ version: '2.4'
 services:
   frigate:
     ...
-    image: ghcr.io/blakeblackshear/frigate-tensorrt-jp5
+    image: ghcr.io/blakeblackshear/frigate:stable-tensorrt-jp5
     runtime: nvidia   # Add this
 ```
 
